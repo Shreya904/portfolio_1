@@ -51,7 +51,7 @@ const Projects = () => {
             key={card.title}
             className="bg-gray-900 shadow-2xl rounded-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-white"
           >
-            <CardBody className="bg-gray-800 p-6 rounded-lg text-center">
+            <CardBody className="bg-neutral-900 p-6 rounded-lg text-center">
               <CardItem
                 as="h2"
                 className="text-2xl font-semibold text-white mb-3"
@@ -73,7 +73,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="bg-white text-black py-2 px-4 rounded-lg hover:bg-black hover:text-white border-white">
+                  <button className="border text-sm font-medium border-white/[0.2] text-white relative items-center flex space-x-1 hover:text-neutral-300 px-4 py-2 rounded-full">
                     View
                   </button>
                 </a>
@@ -82,7 +82,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="bg-white text-black py-2 px-4 rounded-lg hover:bg-black hover:text-white border-white">
+                  <button className="bg-white text-black py-2 px-4 rounded-full hover:bg-black hover:text-white border-white">
                     Code
                   </button>
                 </a>

@@ -85,7 +85,7 @@ export const TextRevealCard = ({ text, revealText, children, className }) => {
         >
           <p
             style={{ textShadow: "4px 4px 15px rgba(0,0,0,0.5)" }}
-            className="text-base sm:text-[3rem] py-10 font-bold text-white bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-300"
+            className="text-base sm:text-[3rem] py-10 font-bold text-[#e4e4e7] bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-300"
           >
             {revealText}
           </p>
@@ -101,7 +101,7 @@ export const TextRevealCard = ({ text, revealText, children, className }) => {
         ></motion.div>
 
         <div className=" [mask-image:linear-gradient(to_bottom,transparent,white,transparent)] w-full">
-          <p className="text-base sm:text-[3rem] py-10 font-bold bg-clip-text text-transparent bg-[#323238]">
+          <p className="text-base sm:text-[3rem] py-10 font-bold bg-clip-text text-transparent bg-[#e4e4e7]">
             {text}
           </p>
           <MemoizedStars />
