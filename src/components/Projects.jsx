@@ -33,7 +33,7 @@ const Projects = () => {
     },
     {
       title: "Currency Convertor",
-      description: "A simple landing page for Mario fans.",
+      description: "Effortlessly convert currencies with real-time rates.",
       imgSrc: currPic, // Use the imported image
       viewSrc: "https://shreya904.github.io/CurrencyConvertor/",
       sourceSrc: "https://github.com/Shreya904/CurrencyConvertor.git",
