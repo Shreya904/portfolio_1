@@ -3,14 +3,14 @@ import Home from "./components/Home";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { HeaderSection } from "./components/ui/Header";
 
 function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen lg:w-full ">
-        <Navbar />
+        <HeaderSection />
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />

@@ -7,7 +7,6 @@ import {
   useCallback,
 } from "react";
 import PropTypes from "prop-types";
-import { cn } from "../lib/utils"; // Import your utility functions from a separate file
 
 // Create Context
 const MouseEnterContext = createContext([false, () => {}]);
@@ -39,7 +38,7 @@ export const CardContainer = ({ children, className, containerClassName }) => {
   return (
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
       <div
-        className={`py-20 flex items-center justify-center ${containerClassName}`}
+        className={`py-7 flex items-center justify-center ${containerClassName}`}
         style={{ perspective: "1000px" }}
       >
         <div

@@ -61,7 +61,7 @@ export const TextRevealCard = ({ text, revealText, children, className }) => {
       onTouchMove={touchMoveHandler}
       ref={cardRef}
       className={cn(
-        "bg-[#1d1c20] border border-white/[0.08] w-[40rem] rounded-lg p-8 relative overflow-hidden",
+        "bg-[#1d1c20] border border-white/[0.08] w-[40rem] rounded-lg p-8 relative",
         className
       )}
     >
@@ -100,7 +100,7 @@ export const TextRevealCard = ({ text, revealText, children, className }) => {
           className="h-40 w-[8px] bg-gradient-to-b from-transparent via-neutral-800 to-transparent absolute z-50 will-change-transform"
         ></motion.div>
 
-        <div className="overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,white,transparent)]">
+        <div className=" [mask-image:linear-gradient(to_bottom,transparent,white,transparent)] w-full">
           <p className="text-base sm:text-[3rem] py-10 font-bold bg-clip-text text-transparent bg-[#323238]">
             {text}
           </p>
