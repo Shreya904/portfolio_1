@@ -5,9 +5,6 @@ import { BoxesCore } from "./ui/BoxesCore";
 const Home = () => {
   return (
     <div className="relative flex flex-col items-center min-h-screen">
-      {/* Grid background with absolute positioning */}
-      {/* <GridBackgroundDemo /> */}
-      {/* Content container */}
       <div className="relative w-full flex flex-col items-center min-h-screen overflow-hidden z-10">
         <BoxesCore />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center z-20 p-4 md:p-6">

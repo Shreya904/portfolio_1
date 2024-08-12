@@ -47,7 +47,7 @@ export function HeaderSection() {
             <span className="block sm:hidden">{navItem.icon}</span>
             <span className="hidden sm:block text-sm">{navItem.name}</span>
             {location.pathname === navItem.link && (
-              <span className="absolute  w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent h-px" />
+              <span className="absolute  w-1/2 mx-auto hidden md:block -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent h-px" />
             )}
           </Link>
         ))}

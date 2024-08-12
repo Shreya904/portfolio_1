@@ -102,7 +102,10 @@ export const TextRevealCard = ({ text, revealText, children, className }) => {
 
         <div className=" [mask-image:linear-gradient(to_bottom,transparent,white,transparent)] w-full">
           <p className="text-base sm:text-[3rem] py-10 font-bold bg-clip-text text-transparent bg-[#e4e4e7]">
-            {text}
+            {text}{" "}
+            {/* <p className="mt-4 text-sm md:text-lg text-neutral-400 w-full"> */}
+            {/* Hover over me.
+            </p> */}
           </p>
           <MemoizedStars />
         </div>
