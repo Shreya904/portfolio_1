@@ -112,7 +112,7 @@ export const TextRevealCard = ({ text, revealText, children, className }) => {
           initial={{ opacity: 1 }}
           animate={{ opacity: isMouseOver ? 0 : 1 }}
           transition={{ duration: 0.3 }}
-          className="absolute bottom-2 right-2 text-sm text-neutral-400 hidden sm:block"
+          className="absolute bottom-1 left-1/2 transform -translate-x-1/2 text-[0.7rem] sm:bottom-2 sm:right-2 sm:left-auto sm:translate-x-0 sm:text-xs md:bottom-4 md:right-4 md:text-sm lg:bottom-6 lg:right-6 lg:text-base text-neutral-400"
         >
           Hover over me.
         </motion.div>
