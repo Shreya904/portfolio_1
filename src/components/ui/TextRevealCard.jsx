@@ -100,15 +100,22 @@ export const TextRevealCard = ({ text, revealText, children, className }) => {
           className="h-40 w-[8px] bg-gradient-to-b from-transparent via-neutral-800 to-transparent absolute z-50 will-change-transform"
         ></motion.div>
 
-        <div className=" [mask-image:linear-gradient(to_bottom,transparent,white,transparent)] w-full">
+        <div className="[mask-image:linear-gradient(to_bottom,transparent,white,transparent)] w-full">
           <p className="text-base sm:text-[3rem] py-10 font-bold bg-clip-text text-transparent bg-[#e4e4e7]">
-            {text}{" "}
-            {/* <p className="mt-4 text-sm md:text-lg text-neutral-400 w-full"> */}
-            {/* Hover over me.
-            </p> */}
+            {text}
           </p>
           <MemoizedStars />
         </div>
+
+        {/* "Hover over me" text */}
+        <motion.div
+          initial={{ opacity: 1 }}
+          animate={{ opacity: isMouseOver ? 0 : 1 }}
+          transition={{ duration: 0.3 }}
+          className="absolute bottom-2 right-2 text-sm text-neutral-400"
+        >
+          Hover over me.
+        </motion.div>
       </div>
     </div>
   );
