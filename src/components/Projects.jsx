@@ -1,5 +1,12 @@
 import CardContainer, { CardBody, CardItem } from "../components/ui/Cards"; // Adjust path if needed
-import { animePic, applePic, sushiPic, marioPic, currPic } from "./lib/utils";
+import {
+  animePic,
+  applePic,
+  sushiPic,
+  marioPic,
+  currPic,
+  vacciPic,
+} from "./lib/utils";
 
 const Projects = () => {
   const project = [
@@ -37,6 +44,13 @@ const Projects = () => {
       imgSrc: currPic, // Use the imported image
       viewSrc: "https://shreya904.github.io/CurrencyConvertor/",
       sourceSrc: "https://github.com/Shreya904/CurrencyConvertor.git",
+    },
+    {
+      title: "VacciTime",
+      description: "A Vaccine reminder for parents of young children.",
+      imgSrc: vacciPic,
+      viewSrc: "https://vacci-time.vercel.app/",
+      sourceSrc: "https://github.com/Shreya904/Vacci-Time",
     },
   ];
 
