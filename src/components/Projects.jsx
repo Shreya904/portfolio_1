@@ -6,6 +6,7 @@ import {
   marioPic,
   currPic,
   vacciPic,
+  kazePic,
 } from "./lib/utils";
 
 const Projects = () => {
@@ -31,13 +32,7 @@ const Projects = () => {
       viewSrc: "https://shreya904.github.io/Shushi_Man/",
       sourceSrc: "https://github.com/Shreya904/Shushi_Man",
     },
-    {
-      title: "MarioClub",
-      description: "A simple landing page for Mario fans.",
-      imgSrc: marioPic, // Use the imported image
-      viewSrc: "https://shreya904.github.io/MarioClub/",
-      sourceSrc: "https://github.com/Shreya904/MarioClub",
-    },
+
     {
       title: "Currency Convertor",
       description: "Easily convert currencies with real-time rates.",
@@ -47,10 +42,24 @@ const Projects = () => {
     },
     {
       title: "VacciTime",
-      description: "A Vaccine reminder for parents of young children.",
+      description: "A Vaccine reminder app for parents.",
       imgSrc: vacciPic,
       viewSrc: "https://vacci-time.vercel.app/",
       sourceSrc: "https://github.com/Shreya904/Vacci-Time",
+    },
+    {
+      title: "KazeBlog",
+      description: "A CRUD blog app.",
+      imgSrc: kazePic,
+      viewSrc: "https://kaze-blog.vercel.app/",
+      sourceSrc: "https://github.com/Shreya904/KazeBlog",
+    },
+    {
+      title: "MarioClub",
+      description: "A simple landing page for Mario fans.",
+      imgSrc: marioPic, // Use the imported image
+      viewSrc: "https://shreya904.github.io/MarioClub/",
+      sourceSrc: "https://github.com/Shreya904/MarioClub",
     },
   ];
 
