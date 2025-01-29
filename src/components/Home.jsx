@@ -1,6 +1,7 @@
 import { TextRevealCard } from "../components/ui/TextRevealCard"; // Adjust the import path as needed
 import { BoxesCore } from "./ui/BoxesCore";
 import Cover from "../components/ui/Cover";
+import shreya from "../components/assets/shreya.pdf";
 
 const Home = () => {
   return (
@@ -17,7 +18,7 @@ const Home = () => {
             <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold max-w-7xl mx-auto text-center py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white">
               Download my resume{" "}
               <Cover>
-                <a href="../components/assets/Shreya Srivastava.pdf" download>
+                <a href={shreya} download>
                   here
                 </a>
               </Cover>
