@@ -26,6 +26,13 @@ const Projects = () => {
       sourceSrc: "https://github.com/Shreya904/AnimeLand",
     },
     {
+      title: "KazeBlog",
+      description: "A CRUD blog app.",
+      imgSrc: kazePic,
+      viewSrc: "https://kaze-blog.vercel.app/",
+      sourceSrc: "https://github.com/Shreya904/KazeBlog",
+    },
+    {
       title: "SushiMan",
       description: "It’s a landing page for a sushi restaurant.",
       imgSrc: sushiPic, // Use the imported image
@@ -46,13 +53,6 @@ const Projects = () => {
       imgSrc: vacciPic,
       viewSrc: "https://vacci-time.vercel.app/",
       sourceSrc: "https://github.com/Shreya904/Vacci-Time",
-    },
-    {
-      title: "KazeBlog",
-      description: "A CRUD blog app.",
-      imgSrc: kazePic,
-      viewSrc: "https://kaze-blog.vercel.app/",
-      sourceSrc: "https://github.com/Shreya904/KazeBlog",
     },
     {
       title: "MarioClub",
