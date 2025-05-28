@@ -75,7 +75,7 @@ const Projects = () => {
       <h1 className="text-4xl md:text-6xl font-bold text-center mt-28 mb-4 bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text tracking-tight text-transparent uppercase">
         Projects
       </h1>
-      <div className="flex flex-wrap justify-center gap-8 my-20">
+      <div className="flex flex-wrap justify-center gap-8 my-10">
         {project.map((card) => (
           <CardContainer
             key={card.title}
