@@ -7,6 +7,7 @@ import {
   currPic,
   vacciPic,
   kazePic,
+  ncaPic,
 } from "./lib/utils";
 
 const Projects = () => {
@@ -38,6 +39,12 @@ const Projects = () => {
       imgSrc: sushiPic, // Use the imported image
       viewSrc: "https://shreya904.github.io/Shushi_Man/",
       sourceSrc: "https://github.com/Shreya904/Shushi_Man",
+    },
+    {
+      title: "Contact Api",
+      description: "It’s an API for creating and storing contacts.",
+      imgSrc: ncaPic, // Use the imported image
+      sourceSrc: "https://github.com/Shreya904/contacts",
     },
 
     {

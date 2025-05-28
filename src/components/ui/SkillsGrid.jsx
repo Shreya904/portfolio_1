@@ -10,6 +10,8 @@ import {
   IconBrandReact,
 } from "@tabler/icons-react";
 
+import { SiNodedotjs, SiExpress, SiMongodb, SiAppwrite } from "react-icons/si";
+
 export function SkillsGrid() {
   const features = [
     {
@@ -60,9 +62,34 @@ export function SkillsGrid() {
         "GitHub is a platform for version control and collaboration, allowing developers to manage and share their code repositories.",
       icon: <IconBrandGithub />,
     },
+    {
+      title: "Node.js",
+      description:
+        "An open-source JavaScript runtime built on Chrome's V8 engine, enabling server-side scripting and scalable backend services.",
+      icon: <SiNodedotjs className="text-3xl text-green-500" />,
+    },
+    {
+      title: "Express.js",
+      description:
+        "A minimal and flexible Node.js web application framework that provides robust features for building APIs and web apps.",
+      icon: <SiExpress className="text-3xl text-gray-300" />,
+    },
+    {
+      title: "MongoDB",
+      description:
+        "A NoSQL database known for its flexibility and scalability, ideal for storing JSON-like documents with dynamic schemas.",
+      icon: <SiMongodb className="text-3xl text-green-600" />,
+    },
+    {
+      title: "Appwrite",
+      description:
+        "An open-source backend server offering authentication, database, storage, and functions for building web and mobile apps.",
+      icon: <SiAppwrite className="text-3xl text-pink-500" />,
+    },
   ];
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10 py-10 max-w-7xl mx-auto">
       {features.map((feature, index) => (
         <Feature key={feature.title} {...feature} index={index} />
       ))}
@@ -75,15 +102,15 @@ const Feature = ({ title, description, icon, index }) => {
   return (
     <div
       className={cn(
-        "flex flex-col lg:border-r  py-10 relative group/feature border-neutral-800",
-        (index === 0 || index === 4) && "lg:border-l border-neutral-800",
-        index < 4 && "lg:border-b border-neutral-800"
+        "flex flex-col lg:border-r py-10 relative group/feature border-neutral-800",
+        index % 4 === 0 && "lg:border-l border-neutral-800",
+        index < 8 && "lg:border-b border-neutral-800"
       )}
     >
-      {index < 4 && (
-        <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t  from-neutral-800 to-transparent pointer-events-none" />
+      {index < 8 && (
+        <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-neutral-800 to-transparent pointer-events-none" />
       )}
-      {index >= 4 && (
+      {index >= 8 && (
         <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-b from-neutral-800 to-transparent pointer-events-none" />
       )}
       <div className="mb-4 relative z-10 px-10 text-neutral-400">{icon}</div>
