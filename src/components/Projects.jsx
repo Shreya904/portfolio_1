@@ -94,19 +94,22 @@ const Projects = () => {
               <CardItem
                 as="img"
                 className="w-full h-48 object-cover rounded-md mt-4"
-                src={card.imgSrc} // This should now be a valid image source
-                alt={card.title} // Use card.title as alt text for better accessibility
+                src={card.imgSrc}
+                alt={card.title}
               />
               <div className="mt-4 flex justify-center space-x-4">
-                <a
-                  href={card.viewSrc}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="border text-sm font-medium border-white/[0.2] text-white relative items-center flex space-x-1 hover:text-neutral-300 px-4 py-2 rounded-full">
-                    View
-                  </button>
-                </a>
+                {/* Only show View button if viewSrc exists */}
+                {card.viewSrc && (
+                  <a
+                    href={card.viewSrc}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="border text-sm font-medium border-white/[0.2] text-white relative items-center flex space-x-1 hover:text-neutral-300 px-4 py-2 rounded-full">
+                      View
+                    </button>
+                  </a>
+                )}
                 <a
                   href={card.sourceSrc}
                   target="_blank"
