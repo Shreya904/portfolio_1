@@ -8,6 +8,7 @@ import {
   vacciPic,
   kazePic,
   ncaPic,
+  ticPic,
 } from "./lib/utils";
 
 const Projects = () => {
@@ -20,18 +21,25 @@ const Projects = () => {
       sourceSrc: "https://github.com/shreya904/Apple_clone/",
     },
     {
-      title: "AnimeLand",
-      description: "It’s a platform to search for different anime.",
-      imgSrc: animePic, // Use the imported image
-      viewSrc: "https://shreya904.github.io/AnimeLand/",
-      sourceSrc: "https://github.com/Shreya904/AnimeLand",
-    },
-    {
       title: "KazeBlog",
       description: "A CRUD blog app.",
       imgSrc: kazePic,
       viewSrc: "https://kaze-blog.vercel.app/",
       sourceSrc: "https://github.com/Shreya904/KazeBlog",
+    },
+    {
+      title: "Tickr",
+      description: "A fullstack Task Management app.",
+      imgSrc: ticPic, // Use the imported image
+      viewSrc: "https://tickr-omega.vercel.app/",
+      sourceSrc: "https://github.com/Shreya904/Tickr",
+    },
+    {
+      title: "AnimeLand",
+      description: "It’s a platform to search for different anime.",
+      imgSrc: animePic, // Use the imported image
+      viewSrc: "https://shreya904.github.io/AnimeLand/",
+      sourceSrc: "https://github.com/Shreya904/AnimeLand",
     },
     {
       title: "SushiMan",

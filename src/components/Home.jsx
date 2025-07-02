@@ -1,6 +1,6 @@
 import Cover from "../components/ui/Cover";
 import { BoxesCore } from "./ui/BoxesCore";
-import shreya from "../components/assets/shreya.pdf";
+import shreya from "../components/assets/shreya.pdf"; // Add your resume in the correct path
 import myImage from "../components/assets/img1.png"; // Add your image in the correct path
 
 const Home = () => {
